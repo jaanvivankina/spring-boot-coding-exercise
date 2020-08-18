@@ -17,5 +17,10 @@ public class FunctionalIT {
   Karate testQuotes() {
     return Karate.run("quotes").relativeTo(getClass());
   }
+  
+  @Karate.Test
+  Karate testUsers() {
+    return Karate.run("users").relativeTo(getClass());
+  }
 
 }
